@@ -1,0 +1,142 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle, #2A2A40, #1F1F2E);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.main-container {
+    width: 1200%;
+    max-width: 1200px;
+    background: linear-gradient(145deg, #272742, #1C1C2C);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7), 0 0 30px rgba(108, 93, 211, 0.6);
+    overflow: hidden;
+    animation: glow 3s infinite alternate;
+    padding: 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(145deg, #6C5DD3, #8A6FC8);
+}
+
+.logo {
+    font-size: 29px;
+    font-weight: bold;
+    color: #fff;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+.nav-bar a {
+    margin: 0 9px;
+    text-decoration: none;
+    color: #C1C1DD;
+    font-size: 15px;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.nav-bar a:hover {
+    color: #FFFFFF;
+    transform: scale(1.1);
+}
+
+
+.hero-title {
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 0 3px 10px rgba(255, 255, 255, 0.3);
+}
+
+.hero-subtitle {
+    font-size: 13px;
+    margin-top: 3px;
+    opacity: 0.95;
+}
+
+.tool-section {
+    padding: 20px;
+}
+
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    width: 70%;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #6C5DD3;
+    background: #202034;
+    color: #FFF;
+    outline: none;
+    transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.search-bar:focus {
+    border-color: #8A6FC8;
+    box-shadow: 0 0 15px #8A6FC8;
+    transform: scale(1.05);
+}
+
+.refresh-button {
+    background: #6C5DD3;
+    color: #FFF;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s;
+}
+
+.refresh-button:hover {
+    background: #8A6FC8;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(140, 93, 255, 0.7);
+}
+
+.log-table {
+    width: 102%;
+    border-collapse: collapse;
+    background: #272742;
+    color: #FFF;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.log-table th, .log-table td {
+    padding: 16px;
+    text-align: left;
+}
+
+.log-table thead {
+    background-color: #6C5DD3;
+}
+
+.log-table tbody tr:nth-child(even) {
+    background: #1F1F2E;
+}
+
+.log-table tbody tr:hover {
+
+}
+

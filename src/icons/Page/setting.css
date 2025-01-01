@@ -1,0 +1,129 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle, #2A2A40, #1F1F2E);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    width: 600px;
+    max-width: 90%;
+    background: linear-gradient(145deg, #272742, #1C1C2C);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7), 0 0 30px rgba(108, 93, 211, 0.6);
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+    background: linear-gradient(145deg, #6C5DD3, #8A6FC8);
+    border-radius: 15px;
+    position: relative;
+}
+
+/* Back Button (X) */
+.back-button {
+    background: #6C5DD3;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 19px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.back-button:hover {
+    background: #8A6FC8;
+    transform: scale(1.1);
+}
+
+/* Logo Text */
+.logo-text {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    flex-grow: 1;
+}
+
+/* Navigation Buttons */
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-button {
+    background: #8A6FC8;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.nav-button:hover {
+    background: #B19DE6;
+    transform: scale(1.1);
+}
+
+.nav-button.active {
+    background: #6C5DD3;
+    font-weight: bold;
+}
+
+/* Settings Section */
+.settings-section {
+    margin-top: 20px;
+}
+
+.settings-options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+select,
+input[type="range"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #6C5DD3;
+    background: #202034;
+    color: #FFF;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+select:focus,
+input[type="range"]:focus {
+    border-color: #8A6FC8;
+    box-shadow: 0 0 15px #8A6FC8;
+}
+
+#scale-value {
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: right;
+}
