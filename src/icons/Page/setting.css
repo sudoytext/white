@@ -24,7 +24,6 @@ body {
     padding: 20px;
 }
 
-/* Header */
 .header {
     display: flex;
     justify-content: space-between;
@@ -35,7 +34,6 @@ body {
     position: relative;
 }
 
-/* Back Button (X) */
 .back-button {
     background: #6C5DD3;
     color: #fff;
@@ -53,7 +51,6 @@ body {
     transform: scale(1.1);
 }
 
-/* Logo Text */
 .logo-text {
     font-size: 22px;
     font-weight: bold;
@@ -61,7 +58,6 @@ body {
     flex-grow: 1;
 }
 
-/* Navigation Buttons */
 .nav-buttons {
     display: flex;
     gap: 10px;
@@ -88,7 +84,6 @@ body {
     font-weight: bold;
 }
 
-/* Settings Section */
 .settings-section {
     margin-top: 20px;
 }
