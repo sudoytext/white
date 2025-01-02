@@ -1,4 +1,4 @@
-/* General Reset */
+/* Style.css */
 * {
     margin: 0;
     padding: 0;
@@ -138,5 +138,39 @@ html {
 
 .log-table tbody tr:hover {
 
+}
+body {
+    background: linear-gradient(145deg, #1A1A40, #272742, #6C5DD3, #8A6FC8);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s infinite linear;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Speed Slider Enhancements */
+.speed-slider {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#speed-control {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.speed-value {
+    font-size: 14px;
+    font-weight: bold;
 }
 

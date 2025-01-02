@@ -1,4 +1,3 @@
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +12,22 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(145deg, #1A1A40, #272742, #6C5DD3, #8A6FC8);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s infinite linear;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .main-container {
@@ -121,4 +136,29 @@ input[type="range"]:focus {
     font-size: 14px;
     margin-top: 5px;
     text-align: right;
+}
+
+.speed-slider {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#speed-control {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.speed-value {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+body.scaled {
+    transform: scale(1);
+    filter: blur(0px);
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+body.scaled.blur {
+    filter: blur(5px);
 }

@@ -1,0 +1,111 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle, #2A2A40, #1F1F2E);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    width: 700px;
+    max-width: 90%;
+    background: linear-gradient(145deg, #272742, #1C1C2C);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7), 0 0 30px rgba(108, 93, 211, 0.6);
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+    background: linear-gradient(145deg, #6C5DD3, #8A6FC8);
+    border-radius: 15px;
+    position: relative;
+}
+
+.back-button {
+    background: #6C5DD3;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 19px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.back-button:hover {
+    background: #8A6FC8;
+    transform: scale(1.1);
+}
+
+.logo-text {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Plans Section */
+.plans-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.plan-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.plan-card {
+    background: #1F1F2E;
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.plan-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.plan-details {
+    list-style: none;
+}
+
+.detail-item {
+    padding: 10px 0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.detail-item.tick::before {
+    content: '✔';
+    color: #6C5DD3;
+    font-weight: bold;
+}
+
+.detail-item.cross::before {
+    content: '✖';
+    color: red;
+    font-weight: bold;
+}

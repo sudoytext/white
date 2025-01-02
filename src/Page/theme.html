@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White - Themes</title>
+    <link rel="stylesheet" href="theme.css">
+</head>
+<body>
+<div class="main-container">
+    <header class="header">
+        <button id="back-button" class="back-button">X</button>
+        <div class="logo-text">Themes</div>
+    </header>
+    <section class="themes-section">
+        <h2>Select Your Theme</h2>
+        <div class="theme-options">
+            <div class="theme-circle" data-theme="dark-blue" style="background-color: #1A1A40;"></div>
+            <div class="theme-circle" data-theme="dark-green" style="background-color: #1A4036;"></div>
+            <div class="theme-circle" data-theme="light-purple" style="background-color: #8A6FC8;"></div>
+            <div class="theme-circle" data-theme="dark-red" style="background-color: #401A1A;"></div>
+            <div class="theme-circle" data-theme="classic-white" style="background-color: #FFFFFF; border: 2px solid #000;"></div>
+        </div>
+
+        <!-- Speed Slider -->
+        <div class="speed-slider">
+            <label for="speed-control">Speed:</label>
+            <input type="range" id="speed-control" min="1" max="100" value="50">
+            <div class="speed-value">
+                <span id="speed-percentage">50%</span>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script src="theme.js"></script>
+</body>
+</html>
