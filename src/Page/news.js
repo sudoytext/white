@@ -29,7 +29,7 @@ function updateNewsContent(index) {
 }
 
 document.getElementById("prev-button").addEventListener("click", () => {
-    currentIndex = (currentIndex - 1 + newsItems.length) % newsItems.length; // Loop backward
+    currentIndex = (currentIndex - 1 + newsItems.length) % newsItems.length;
     updateNewsContent(currentIndex);
 });
 

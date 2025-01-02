@@ -9,6 +9,9 @@ document.getElementById("news-button").addEventListener("click", () => {
 document.getElementById("theme-button").addEventListener("click", () => {
     window.location.href = "theme.html";
 });
+document.getElementById("shop-button").addEventListener("click", () => {
+    window.location.href = "shop.html";
+});
 
 const scaleSlider = document.getElementById("scale-slider");
 const scaleValue = document.getElementById("scale-value");

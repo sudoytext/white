@@ -24,7 +24,6 @@ body {
     padding: 20px;
 }
 
-/* Header */
 .header {
     display: flex;
     justify-content: space-between;
@@ -32,7 +31,6 @@ body {
     padding: 14px;
     background: linear-gradient(145deg, #6C5DD3, #8A6FC8);
     border-radius: 15px;
-    position: relative;
 }
 
 .back-button {
@@ -55,20 +53,22 @@ body {
 .logo-text {
     font-size: 22px;
     font-weight: bold;
-    text-align: center;
 }
 
-/* Plans Section */
 .plans-section {
     margin-top: 20px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
 }
 
 .plan-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    width: 100%;
+    justify-content: center;
 }
 
 .plan-card {
@@ -78,16 +78,22 @@ body {
     width: 100%;
     max-width: 500px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.plan-card.hidden {
+    display: none;
 }
 
 .plan-card h3 {
     font-size: 24px;
     margin-bottom: 15px;
-    text-transform: uppercase;
 }
 
 .plan-details {
     list-style: none;
+    padding: 0;
 }
 
 .detail-item {
@@ -108,4 +114,24 @@ body {
     content: '✖';
     color: red;
     font-weight: bold;
+}
+
+.slider-button {
+    background: #6C5DD3;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.slider-button:hover {
+    background: #8A6FC8;
+    transform: scale(1.1);
 }
