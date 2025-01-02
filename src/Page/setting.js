@@ -1,25 +1,10 @@
+
 document.getElementById("back-button").addEventListener("click", () => {
     window.location.href = "index.html";
 });
-
-const navButtons = document.querySelectorAll(".nav-button");
-navButtons.forEach((button) => {
-    button.addEventListener("click", (e) => {
-        const id = e.target.id;
-
-        navButtons.forEach((btn) => btn.classList.remove("active"));
-        button.classList.add("active");
-
-        if (id === "news-button") {
-            alert("News Section Coming Soon!");
-        } else if (id === "shop-button") {
-            alert("Shop Section Coming Soon!");
-        } else if (id === "theme-button") {
-            alert("Theme Section Coming Soon!");
-        }
-    });
+document.getElementById("news-button").addEventListener("click", () => {
+    window.location.href = "src/Page/News/news.html";
 });
-
 const scaleSlider = document.getElementById("scale-slider");
 const scaleValue = document.getElementById("scale-value");
 
@@ -29,4 +14,20 @@ scaleSlider.addEventListener("input", () => {
 
     document.body.style.transform = `scale(${scale / 100})`;
     document.body.style.transformOrigin = "top left";
+});
+
+const themeSelector = document.getElementById("theme-selector");
+themeSelector.addEventListener("change", (e) => {
+    const theme = e.target.value;
+
+    if (theme === "light") {
+        document.body.style.background = "#FFFFFF";
+        document.body.style.color = "#000000";
+    } else if (theme === "dark") {
+        document.body.style.background = "#000000";
+        document.body.style.color = "#FFFFFF";
+    } else {
+        document.body.style.background = "radial-gradient(circle, #2A2A40, #1F1F2E)";
+        document.body.style.color = "#FFFFFF";
+    }
 });
