@@ -1,7 +1,7 @@
 const logs = [
-    { path: "E:/echo-tool/build/bam-tool.exe", status: "Accepted", executedAt: "2025-01-01 10:34:56" },
-    { path: "C:/Windows/System32/cmd.exe", status: "Suspected", executedAt: "2025-01-01 10:20:34" },
-    { path: "C:/Users/User/Documents/project.exe", status: "Pending", executedAt: "2025-01-01 09:50:12" },
+    { path: "E:/echo-tool/build/Hackirtool.exe", status: "Accepted", executedAt: "2025-01-01 10:34:56" },
+    { path: "C:/Windows/System32/Vape.exe", status: "Suspected", executedAt: "2025-01-01 10:20:34" },
+    { path: "C:/Users/User/Documents/Pedaret.exe", status: "Pending", executedAt: "2025-01-01 09:50:12" },
 ];
 
 function populateTable() {
