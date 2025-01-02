@@ -3,7 +3,7 @@ document.getElementById("back-button").addEventListener("click", () => {
     window.location.href = "index.html";
 });
 document.getElementById("news-button").addEventListener("click", () => {
-    window.location.href = "src/Page/News/news.html";
+    window.location.href = "news.html";
 });
 const scaleSlider = document.getElementById("scale-slider");
 const scaleValue = document.getElementById("scale-value");

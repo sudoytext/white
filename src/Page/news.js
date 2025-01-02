@@ -1,5 +1,5 @@
 document.getElementById("back-button").addEventListener("click", () => {
-    window.location.href = "../setting.html";
+    window.location.href = "setting.html";
 });
 
 const newsItems = [
