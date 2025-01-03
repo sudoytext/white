@@ -2,11 +2,11 @@ const logs = [
     { path: "E:/echo-tool/build/Hackirtool.exe", status: "Accepted", executedAt: "2025-01-01 10:34:56" },
     { path: "C:/Windows/System32/Vape.exe", status: "Suspected", executedAt: "2025-01-01 10:20:34" },
     { path: "C:/Users/User/Documents/Pedaret.exe", status: "Pending", executedAt: "2025-01-01 09:50:12" },
-    { path: "C:/Program Files/SpeedX.exe", status: "Accepted", executedAt: "2025-01-01 09:40:15" },
-    { path: "D:/Games/RunFast.exe", status: "Suspected", executedAt: "2025-01-01 09:30:45" }
+    { path: "C:/Program Files/ToolX.exe", status: "Accepted", executedAt: "2025-01-01 09:45:00" },
+    { path: "D:/Games/SpeedHack.exe", status: "Suspected", executedAt: "2025-01-01 09:30:25" }
 ];
 
-function populateTable(logArray) {
+function populateLogs(logArray) {
     const tableBody = document.getElementById("log-table");
     tableBody.innerHTML = "";
 
@@ -30,17 +30,11 @@ function populateTable(logArray) {
         tableBody.appendChild(row);
     });
 }
-function filterLogs(query) {
-    const filteredLogs = logs.filter(log => log.path.toLowerCase().includes(query.toLowerCase()));
-    populateTable(filteredLogs);
-}
+
 document.getElementById("search-bar").addEventListener("input", (e) => {
-    const query = e.target.value;
-    filterLogs(query);
-});
-document.getElementById("refresh-button").addEventListener("click", () => {
-    document.getElementById("search-bar").value = "";
-    populateTable(logs);
+    const query = e.target.value.toLowerCase();
+    const filteredLogs = logs.filter(log => log.path.toLowerCase().includes(query));
+    populateLogs(filteredLogs);
 });
 
-document.addEventListener("DOMContentLoaded", () => populateTable(logs));
+document.addEventListener("DOMContentLoaded", () => populateLogs(logs));

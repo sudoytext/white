@@ -1,4 +1,4 @@
-/* Style.css */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -36,28 +36,57 @@ html {
     align-items: center;
     padding: 20px;
     background: linear-gradient(145deg, #6C5DD3, #8A6FC8);
+    border-radius: 10px;
 }
 
 .logo {
     font-size: 29px;
     font-weight: bold;
-    color: #fff;
+    color: #ffffff;
     animation: pulse 1.5s infinite ease-in-out;
 }
 
 .nav-bar a {
-    margin: 0 9px;
+    display: inline-block;
+    width: 80px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 10px;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: bold;
     text-decoration: none;
-    color: #C1C1DD;
-    font-size: 15px;
-    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    border: 2px solid rgba(255, 255, 255, 0.06);
+    background: transparent;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+    position: relative;
+}
+
+.nav-bar a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.17), #8A6FC8);
+    z-index: 0;
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(100%);
+}
+
+.nav-bar a:hover::before {
+    transform: translateY(0);
 }
 
 .nav-bar a:hover {
-    color: #FFFFFF;
+    color: #1F1F2E;
     transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px rgba(140, 93, 255, 0.7);
 }
-
 
 .hero-title {
     font-size: 30px;
@@ -80,7 +109,6 @@ html {
     justify-content: space-between;
     margin-bottom: 20px;
 }
-
 .search-bar {
     width: 70%;
     padding: 15px;
@@ -90,6 +118,11 @@ html {
     color: #FFF;
     outline: none;
     transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.search-bar::placeholder {
+    color: #fff;
+    text-shadow: 0 0 8px rgba(140, 93, 255, 0.8);
 }
 
 .search-bar:focus {
@@ -137,8 +170,9 @@ html {
 }
 
 .log-table tbody tr:hover {
-
+    background: rgba(111, 145, 255, 0.17);
 }
+
 body {
     background: linear-gradient(145deg, #1A1A40, #272742, #6C5DD3, #8A6FC8);
     background-size: 400% 400%;
@@ -158,7 +192,6 @@ body {
     }
 }
 
-/* Speed Slider Enhancements */
 .speed-slider {
     text-align: center;
     margin-top: 30px;
@@ -173,4 +206,3 @@ body {
     font-size: 14px;
     font-weight: bold;
 }
-

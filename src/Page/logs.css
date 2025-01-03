@@ -1,0 +1,142 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'TwitterChirp', 'Helvetica Neue', Arial, sans-serif;
+    height: 100vh;
+    background: radial-gradient(circle, #2A2A40, #1F1F2E);
+    overflow: hidden;
+    color: #fffcfc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    width: 90%;
+    max-width: 900px;
+    background: rgba(31, 31, 46, 0.9);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 40px rgba(168, 132, 221, 0.8);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(145deg, #6C5DD3, #8A6FC8);
+    border-radius: 10px;
+}
+
+.nav-bar a {
+    margin-left: 2px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+.nav-bar a:hover {
+    background: #ffffff;
+    color: #6C5DD3;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(168, 132, 221, 0.8);
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logs-section {
+    margin-top: 20px;
+}
+
+.search-bar-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    gap: 15px;
+}
+
+.search-bar {
+    .search-bar::placeholder {
+        color: #ffffff;
+        text-shadow: 0 0 5px #8A6FC8;
+        opacity: 1;
+    }
+    flex: 1;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    font-size: 15px;
+    background: #6f6bda;
+    color: #ffffff;
+    font-family: 'TwitterChirp', 'Helvetica Neue', Arial, sans-serif;
+    outline: none;
+    ::placeholder {
+        color: #ffffff;
+        opacity: 0.8;
+    }
+}
+
+.search-button {
+    padding: 10px 20px;
+    border-radius: 25px;
+    background: linear-gradient(145deg, #6C5DD3, #8A6FC8);
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    animation: glowing 1.5s infinite;
+    transition: transform 0.2s ease-in-out;
+}
+
+.search-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #8A6FC8;
+}
+
+@keyframes glowing {
+    0% { box-shadow: 0 0 5px #6C5DD3; }
+    50% { box-shadow: 0 0 15px #6C5DD3; }
+    100% { box-shadow: 0 0 5px #6C5DD3; }
+}
+
+.log-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.log-table th, .log-table td {
+    padding: 10px 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.log-table th {
+    background: rgba(108, 93, 211, 0.3);
+    font-weight: bold;
+}
+
+.log-table td {
+    color: #f0fffc;
+}
+
+.log-table tr:hover {
+    background: rgba(111, 145, 255, 0.17);
+}

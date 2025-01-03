@@ -1,5 +1,5 @@
 document.getElementById("back-button").addEventListener("click", () => {
-    window.location.href = "index.html"; // Navigate back to the main page
+    window.location.href = "setting.html";
 });
 
 const plans = document.querySelectorAll(".plan-card");

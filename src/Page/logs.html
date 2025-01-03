@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>White - Logs</title>
+  <link rel="stylesheet" href="logs.css">
+</head>
+<body>
+<div class="main-container">
+  <!-- Header with Navigation -->
+  <header class="header">
+    <div class="logo">
+      <span class="logo-text">White</span>
+    </div>
+    <nav class="nav-bar">
+      <a href="index.html" id="back-to-menu">close</a>
+      <a href="setting.html" id="settings-button">Settings</a>
+    </nav>
+  </header>
+
+  <section class="logs-section">
+    <div class="search-bar-container">
+      <input type="text" placeholder="search for logs..." class="search-bar" id="search-bar">
+      <button class="search-button">Go</button>
+    </div>
+    <table class="log-table">
+      <thead>
+      <tr>
+        <th>File Path</th>
+        <th>Status</th>
+        <th>Executed At</th>
+      </tr>
+      </thead>
+      <tbody id="log-table">
+      </tbody>
+    </table>
+  </section>
+</div>
+
+<script src="logs.js"></script>
+</body>
+</html>
